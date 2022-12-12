@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS</title>
+    <style>
+    .item{
+        border:2px solid black;
+        background-color: aqua;
+        margin: 50px;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        }
+    .container{
+        display: flex;
+        height: 500px;
+        border: 1px solid grey;
+        /* flex-direction: row-reverse; */
+        /* justify-content: space-between; */
+        justify-content: space-around;
+        /* justify-content: right; */
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        }
+    .item:hover{
+        background-color: honeydew;
+        color: blueviolet;
+    }
+    .container{
+        background-color: darkblue;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item">one</div>
+    <div class="item">two</div>
+    <div class="item">three</div>
+    <div class="item">four</div>
+    <div class="item">five</div>
+    <div class="item">one</div>
+    <div class="item">two</div>
+    <div class="item">three</div>
+    <div class="item">four</div>
+    <div class="item">five</div>
+    </div>
+</body>
+</html>

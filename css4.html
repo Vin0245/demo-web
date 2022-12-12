@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS</title>
+    <style>
+        /* div p{
+            background-color: rgb(194, 96, 194);
+            color: blue;
+        /* } 
+        /*         
+        div+p{
+            background-color: rgb(135, 46, 46);
+            color: bisque;
+        }  */
+        .warning::before{
+            content: "Danger";
+            color:  rgb(242, 4, 4);
+            font-size: 25px;
+        }
+        .quote::after{
+            content: "  -JavaScript";
+            color: brown;
+            font-size: 11px;
+            li
+        }
+        a:hover{
+            background-color: #808080;
+            color:yellow;
+        }
+        input:focus{
+            color: silver;
+            background-color: black;
+        }
+        Button{
+            background-color: darkorange;
+            color: black;
+            height: 45px;
+            width: 70px;
+            border-radius: 12px;
+            border: 2px solid #808080;
+            padding: 3px;
+        }
+        Button:hover{
+            background-color: aliceblue;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+    <div class="warning">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> -->
+    <a class="quote" href="https://www.geeksforgeeks.org">Go to geeksforgeeks</a> <br>
+    Name <input type="text" name="" id=""><br>
+    Email <input type=email"><br>
+    Password <input type="password"> <br>
+    <Button >Submit</Button>
+</body>
+</html>

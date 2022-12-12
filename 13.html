@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <style>
+     
+      /* universal selector */
+     *{
+      background-color: #874040;
+      color: #222;
+     }
+
+      /* individual selector */
+     p{
+      background-color: #3d3d3d;
+      color: #000;
+     }
+      
+      /* class and id selector */
+      .warning{
+        background-color: #ef9323;
+        color: FdFFFFF;
+     }
+     #danger{
+      background-color: #e93916;
+      color: 1d1d1d1d;
+     }
+      
+      
+      /* and selector (chained) */
+      li.bg-black.text-white{
+        background-color: aquamarine;
+      }
+      
+      /* combined selector */
+      span,li{
+        background-color: burlywood;
+      }
+
+      /* inside an element */
+      div ul li{
+        background-color: #4b35f1;
+      }
+      
+      /* direct child */
+      div>li{
+        background-color: #766776;
+      }
+      
+
+      /* sibling  ~ or + */
+      .sibling+p{
+        background-color: pink;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="danger">Welcome to live class</div>
+    <span class="warning">Span is just a span, nothing more</span>
+    <p>We all know paragraph</p>
+    <ul>
+      <li class="bg-black text-white">item1</li>
+      <li >item2</li>
+      <li >item3</li>
+      <li >item4</li>
+      <li>item5</li>
+    </ul>
+
+    <div>
+      <p id="danger">lorem</p>
+      <li>awesome</li>
+      <ul>
+        <li>highlight me <a href="#">test</a></li>
+        <li>highlight me</li>
+      </ul>
+    </div>
+
+    <section>
+      <p class="sibling">Test 1</p>
+      <p >Test 2</p>
+      <p>Test 3</p>
+      <p >Test 4</p>
+      <p>Test 5</p>
+    </section>
+  </body>
+</html>

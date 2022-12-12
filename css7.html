@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS</title>
+    <style>
+        .item{
+            border: 2px dotted black;
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            height: 500px;
+            border: 2px solid green;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap:wrap;
+            align-items: baseline;
+            align-content: flex-end;
+        }
+        #flex{
+            order: ;
+            align-self: flex-start;
+        }
+        .item:hover{
+            color: aqua;
+            background-color: gold;
+        }
+        .container:hover{
+            color: fuchsia;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">one</div>
+        <div class="item" id="flex">two</div>
+        <div class="item">three</div>
+        <div class="item">four</div>
+        <!-- <div class="item">five</div> -->
+        <div class="item">five</div>
+        <div class="item">six</div>
+        <div class="item">seven</div>
+        <div class="item">eight</div>
+    </div>
+</body>
+</html>
