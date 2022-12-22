@@ -1,0 +1,10 @@
+let_marks_class_12=[91,82,63,84,false,"not present",""]
+console.log(let_marks_class_12)
+console.log(let_marks_class_12[0])
+console.log(let_marks_class_12[1])
+console.log(let_marks_class_12[2])
+console.log(let_marks_class_12[3])
+console.log(let_marks_class_12[4])
+console.log(let_marks_class_12[5])
+console.log(let_marks_class_12[6])
+console.log(let_marks_class_12[7])

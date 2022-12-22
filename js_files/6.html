@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a=prompt("Hey whats your age: ");
+        a=Number.parseInt(a);//converting string into num
+        if(a<0){
+            alert("This is invalid age. ");
+        }else if(a>0 && a<15){
+            alert("U are kid and you cannot even think of driving.");
+        }else if(a>15 && a<18){
+            alert("U are teenager and you can think of driving after 18.");
+        }else{
+            alert("You can now drive as you are above 18");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
