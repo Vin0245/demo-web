@@ -1,4 +1,11 @@
+
+  
 {
+  
+    "scripts":{
+      "start":"vite"
+    },
+  
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",
@@ -6,7 +13,7 @@
   },
   "dependencies": {
     "vit": "^0.0.1",
-    "vite": "^4.0.1"
+    "vite": "^4.0.4"
   },
   "name": "neo_winter_2022",
   "description": "",
