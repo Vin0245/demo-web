@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var value=document.getElementById('data').innerText.value;
+            if(value%2==0){
+                //even
+                res=`${value} is a even number`;
+            }
+            else{
+                //odd
+                res=`${value} is a odd number`;
+            }
+            document.getElementById('res').innerText=res;
+        }
+    </script>
+</head>
+<body>
+    <input type="" name="" id="data">
+    <button onclick="check()">Check</button>
+    <h1 id="res"></h1>
+</body>
+</html>
