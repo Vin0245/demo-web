@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // insert Element in the Array
+        let data=[60,30,10,67,40];
+        console.log(data)
+        let newEl=70;
+        let position=2
+        for(let i=data.length-1; i>=0; i--){
+            if(i>=position){
+                data[i+1]=data[i]
+                if(i==position){
+                    data[i]=newEl;
+                    console.log(data[i])
+                }
+            }
+        }
+        console.log(data)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
