@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>Hey Kunal</h1>
+    <p>kunal is the best</p>
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+        <li class="tech">four</li>
+    </ul>
+    <script>
+        let val = document.getElementsByClassName("tech");
+        console.log(val);
+        val[1].innerHTML="<h1> 23 </h1>" // this modify the html code
+        val[2].innerHTML="<h2> 24 </h2>" // this modify the html code
+    </script>
+</body>
+</html>

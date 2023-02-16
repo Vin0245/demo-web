@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <p id="js">kunal is the best</p>
+
+    <script>
+        let val = confirm("are you sure?");
+        if(val){
+            document.getElementById("js").innerHTML="<h1> He/she pressed ok"
+        }
+        else{
+            document.getElementById("js").innerHTML="<h1> He/she pressed cancel"
+        }
+    </script>
+</body>
+</html>
