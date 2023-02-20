@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>Learning Event Listner</h1>
+    <p id="js">Event Listner</p>
+    <p id="js1"></p>
+    <p id="js2"></p>
+    <p id="js3"></p>
+    <p id="js4"></p>
+    <p id="js5"></p>
+    <p id="js6"></p>
+    <p id="js7"></p>
+
+    <label for="message">Message</label>
+    <input type="text" name="" id="message" placeholder="Enter Text">
+
+    
+
+    <input placeholder="Click here, then press down a key." size="40" />
+<p id="log"></p>
+
+    <script>
+        document.addEventListener("click",function(){
+            document.getElementById("js").innerText="Mouse Clicked";
+        })
+
+        document.addEventListener("dblclick",function(){
+            document.getElementById("js1").innerText="Double Mouse clicked";
+        })
+
+        document.addEventListener("mousedown",function(){
+            document.getElementById("js2").innerText="Mouse is down";
+        })
+
+        document.addEventListener("mouseenter",function(){
+            document.getElementById("js3").innerText="Mouse is enter";
+        })
+
+        document.addEventListener("mouseup",function(){
+            document.getElementById("js4").innerText="Mouse is up";
+        })
+
+        document.addEventListener("mouseover",function(){
+            document.getElementById("js5").innerText="Mouse is over";
+        })
+
+        let message=document.getElementById("message");
+        let value = document.getElementById("js6");
+        message.addEventListener("input",function(){
+            js6.innerText=this.value
+        })
+
+        document.addEventListener("keydown",function(){
+            document.getElementById("js7").innerText="key is down"
+        })
+
+       
+        
+      
+    </script>
+</body>
+</html>
