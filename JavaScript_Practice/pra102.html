@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <!-- <h1>Hello Kunal</h1> -->
+    <p>You are the best</p>
+
+    <ul>
+        <!-- <li class="title">one</li>
+        <li class="title">two</li>
+        <li class="title">three</li>
+        <li class="title">four</li> -->
+    </ul>
+
+    <script>
+        // create Element on screen
+        let para = document.createElement("p");
+        para.className="title";
+        para.style.color="green";
+        para.style.fontSize="45px"
+        para.innerHTML = "This is a paragraph.";
+        
+        document.body.appendChild(para);
+    </script>
+</body>
+</html>

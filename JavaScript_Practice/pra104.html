@@ -7,10 +7,15 @@
     <title>Document Object Model</title>
 </head>
 <body>
-    <!-- create element on screen -->
-    <h1>Hey kunal</h1>
     <script>
-        
-    </script>    
+        for(let i=0; i<3; i++){
+            let pra = document.createElement("p")
+            pra.className="fsjs";
+            pra.style.fontSize="40px"
+            pra.innerHTML=i;
+            document.body.appendChild(pra);
+            console.log(pra)
+        }
+    </script>
 </body>
 </html>

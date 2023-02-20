@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>Hello Kunal</h1>
+    <p class="fsjs" id="fsjs2">You are the <span>Best</span> </p>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+    </ul>
+    <script>
+        // let val=document.getElementById("fsjs2")
+        // console.log(val.innerText)  // This only gives text
+
+        let val=document.getElementById("fsjs2");
+        console.log(val.innerHTML)  // This gives text with span tag
+    </script>
+</body>
+</html>

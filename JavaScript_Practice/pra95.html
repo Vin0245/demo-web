@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>Hello Kunal</h1>
+    <p class="fsjs" id="fsjs2">You are the best</p>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+    </ul>
+
+    <ul>
+      <li class="tech">JavaScript</li>
+      <li class="tech">Nodejs</li>
+      <li class="tech">Reactjs</li>
+    </ul>
+
+    <script>
+        let val = document.getElementsByClassName("tech")
+        // console.log(val);
+        // console.log(val[0]);
+        // console.log(val[1]);
+        val[1].innerText="kunal";
+        val[2].innerText="<h1>Hiii chandi</h1>";
+        console.log(val[1]);
+        console.log(val[2]);
+
+        val[1].innerHTML="kunal";
+        val[2].innerHTML="<h1>Hiii chandi</h1>";
+        console.log(val[1]);
+        console.log(val[2]);
+    </script>
+</body>
+</html>

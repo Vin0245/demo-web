@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <button onclick=maths() id="fsjs2">Submit</button>
+    <p id="js"></p>
+
+    <script>
+        function maths(){
+            let value = prompt("Solve this 50-30");
+            if(value==20){
+                document.getElementById("js").innerText="Success Redirect";
+                document.getElementById("js").style.backgroundColor="red";
+            }
+            else{
+                document.getElementById("js").innerText="fail try again";
+                document.getElementById("js").style.backgroundColor="lightblue";
+            }
+        }
+    </script>
+</body>
+</html>
