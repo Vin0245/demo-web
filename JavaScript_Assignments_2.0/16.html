@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which season</title>
+</head>
+<body>
+<h1 id="js"></h1>
+<script>
+let txt = prompt("Enter Month")
+if(txt == "september" || txt == "october" || txt == "november"){
+    document.getElementById("js").innerText="The season is Autumn"
+}
+else if(txt == "december" || txt == "january" || txt == "february"){
+    document.getElementById("js").innerText="The season is winter"
+}
+else if(txt == "march" || txt == "april" || txt == "may"){
+    document.getElementById("js").innerText="The season is spring"
+}
+else if(txt == "june" || txt == "july" || txt == "august"){
+    document.getElementById("js").innerText="The season is summer"
+}
+else{
+document.getElementById("js").innerText="Please enter only month"
+}
+</script>
+</body>
+</html>
