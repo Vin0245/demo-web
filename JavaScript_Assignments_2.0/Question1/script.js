@@ -17,5 +17,3 @@ console.log(typeof foo);
 console.log(typeof num);
 console.log(typeof arr);
 console.log(typeof obj);
-
-
