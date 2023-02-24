@@ -1,14 +1,22 @@
-function getPrimes(max) {
-    var sieve = [], i, j, primes = [];
-    for (i = 2; i <= max; ++i) {
-        if (!sieve[i]) {
-            // i has not been marked -- it is prime
-            primes.push(i);
-            for (j = i << 1; j <= max; j += i) {
-                sieve[j] = true;
+// Write a program to print all the prime number between 0 to 100 (0 and 100 included).
+
+function primeOrNot(){
+    var num=100;
+    var isPrime;
+    for(var i=2; i<=num; i++){
+        isPrime=1;
+        for(var j=2; j<=i/2; j++){
+            if(i%j==0){
+                isPrime=0;
+                break;
             }
         }
+    
+    if(isPrime==1){
+        console.log(i,"is prime number")
+    }else{
+        console.log(i,"is not a prime number")
     }
-    return primes;
 }
-getPrimes(100)
+}
+primeOrNot()
