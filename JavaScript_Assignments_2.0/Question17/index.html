@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month in Day</title>
+</head>
+<body>
+<h1 id="js"></h1>
+<script>
+    let month=prompt("Enter Month name: ");
+    if(month=="January" || month=="january"){
+        document.getElementById("js").innerText="January have 31 days."
+    }else if(month=="February" || month=="february"){
+        document.getElementById("js").innerText="February have 28 days."
+    }else if(month=="March" || month=="march"){
+        document.getElementById("js").innerText="March have 31 days."
+    }
+    else if(month=="April" || month=="april"){
+        document.getElementById("js").innerText="April have 30 days."
+    }else if(month=="May" || month=="may"){
+        document.getElementById("js").innerText="May have 31 days."
+    }else if(month=="June" || month =="june"){
+        document.getElementById("js").innerText="June have 30 days."
+    }else if(month=="July" || month == "july"){
+        document.getElementById("js").innerText="July have 31 days."
+    }else if(month=="September" || month=="september"){
+        document.getElementById("js").innerHTML="September have 30 days."
+    }else if(month=="October" || month=="october"){
+        document.getElementById("js").innerText="October have 31 days."
+    }else if(month=="November" || month=="november"){
+        document.getElementById("js").innerHTML="November have 30 days."
+    }else if(month=="December" || month=="december"){
+        document.getElementById("js").innerHTML="December have 31 days."
+    }else{
+        document.getElementById("js").innerText="plz enter the month only"
+    }
+</script>
+</body>
+</html>
