@@ -7,8 +7,10 @@
     <title>Hosting Site</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="m-4  bg-black ">
-    <div class="flex items-center">
+<body>
+<!-- first page of the website -->
+<main class="bg-black  relative">
+    <div class="flex items-center p-6">
         <img class="ml-32" src="./Logo.svg" alt="logoImage">
         <div class="mx-auto">
             <nav class="flex gap-16 text-gray-400">
@@ -24,21 +26,109 @@
     <!-- end of navbar -->
 
     <!-- homepage -->
-    <div class=" bg-slate-500 flex m-24">
+    <div class="flex m-24 mt-16 pl-8">
         <!-- left side of the div -->
-        <div class="bg-pink-600 m-4">
-            <h1 class="text-7xl font-semibold text-white h-">The best and <span class="text-blue-400 italic">Cheapest</span> hosting for your website</h1>
-            <p class="text-gray-400 text-xl mt-8">Hosting your website here is easy,access is fast,server security is very well maintained,and of course supported by reliable servers.</p>
+        <div class="m-6 w-1/2">
+            <h1 class="text-7xl font-semibold text-white">The best and <span class="text-blue-400 italic">cheapest</span> hosting for your website</h1>
+            <p class="text-gray-400 text-xl mt-8 -indent-36">Hosting your website here is easy,access is fast,server security is very well maintained,and of course supported by reliable servers.</p>
             <!-- creating div for button  -->
-            <div class="mt-10">
-                <button>Get Started</button>
-                <button>Try Start Free</button>
+            <div class="mt-16">
+                <button class="text-white bg-blue-600 rounded-3xl m-3 h-12 w-32 font-semibold">Get Started</button>
+                <button class="text-white border border-gray-200 rounded-3xl m-3 h-12 w-32  font-semibold">Try Start Free</button>
             </div>
         </div>
         <!-- right side of the div -->
-        <div>
-            <img src="./Group 238502.svg" alt="rightsideImage">
+        <div class="m-5">
+            <img class="w-[500px]" src="./Group 238502.svg" alt="rightsideImage">
         </div>
     </div>
+    
+    <nav class="flex -mt-24 justify-center gap-32 bg-gray-800 p-6">
+        <img src="./Logo.svg" alt="logoImage">
+        <img src="./Logo.svg" alt="logoImage">
+        <img src="./Logo.svg" alt="logoImage">
+        <img src="./Logo.svg" alt="logoImage">
+    </nav>
+</main>
+
+<!-- second page of the website-->
+<div class="mx-auto mb-36 bg-pink-400">
+    <h1 class="text-5xl font-semibold text-center pt-20">The best service especially for you</h1>
+    <p class="text-gray-600 text-center pt-6">We will serve you as best we can with the aim of providing satisfaction to you</p>
+    
+    <!-- parent div of cards  -->
+    <div class="flex justify-center mt-36 gap-14">
+        <!-- fist card of second page -->
+        <div class="w-80">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-500 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <!-- <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5> -->
+        <img class="w-16 mx-auto p-1" src="./fast.svg" alt="fastlogoImage">
+        <h4 class="text-2xl font-semibold p-2 text-center">Faster hosting process</h4>
+        <p class="font-normal text-center text-gray-700 p-2 dark:text-gray-400">We can speed up the creation of your website,which is made directly by the experts.</p>
+        </a>
+        </div>
+
+        <!--second cardof second page -->
+        <div class="w-80 -mt-12">
+        <a href="#" class="block max-w-sm p-6 bg-black border border-gray-200 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <!-- <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5> -->
+        <img class="w-16 mx-auto p-1" src="./signal.svg" alt="SignalImage">
+        <h4 class="text-2xl font-semibold p-2 text-center text-white">Speed to access faster</h4>
+        <p class="font-normal text-gray-400 p-2 dark:text-gray-400 text-center">Excellent network infrastructure and hardware to support fast and stable access.</p> 
+        </a>
+        </div>
+
+        <!-- third card of third page -->
+        <div class="w-80">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-500 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <!-- <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5> -->
+        <img class="w-16 mx-auto p-1" src="./heart.svg" alt="fastlogoImage">
+        <h4 class="text-2xl font-semibold p-2  text-center">Faster Service 24/7</h4>
+        <p class="font-normal text-gray-700 p-2 dark:text-gray-400 text-center">We have a response time of less than 150 seconds,available 24 hours a day.</p>
+        </a>
+        </div>
+    </div>
+</div>
+
+<!-- third page of the website -->
+<div>
+    <h1 class="text-5xl text-center font-semibold">We are ready to support your business <br> needs to be more advanced</h1>
+    <!-- Parent  div -->
+    <div class="flex mt-24">
+        <!-- left side div of third page -->
+        <div class="w-[420px] ml-80">
+            <ul class="">
+                <div class="flex border border-black bg-blue-600 text-xl pt-4 font-semibold text-white h-16 rounded-3xl pl-8">
+                <li class="">Our main features</li>
+                <img class="w-10 ml-32 mb-4" src="./Group 238511.svg" alt="minusimage">
+                </div>
+                <div class="flex border
+                 border-gray-500 mt-3 text-xl pt-4 font-semibold  h-16 rounded-3xl pl-8 text-black">
+                <li>Speed optimization</li>
+                <img class="w-10 ml-32 mb-4" src="./Group 238512.svg" alt="minusimage">
+                </div>
+                <div class="flex border
+                border-gray-500 mt-3 text-xl pt-4 font-semibold  h-16 rounded-3xl pl-8 text-black" >
+                <li>Downtime and security optimization</li>
+                <img class="w-10 ml-32 mb-4" src="./Group 238512.svg" alt="plusimage">
+                </div>
+                <div  class="flex border
+                border-gray-500 mt-3 text-xl pt-4 font-semibold  h-16 rounded-3xl pl-8 text-black">
+                <li>Additional</li>
+                <img class="w-10 ml-32 mb-4" src="./Group 238512.svg" alt="plusimage">
+                </div>
+                <div class="flex border
+                border-gray-500 mt-3 text-xl pt-4 font-semibold  h-16 rounded-3xl pl-8 text-black">
+                <li>Best technical support service</li>
+                <img class="w-10 ml-32 mb-4" src="./Group 238512.svg" alt="plusimage">
+                </div>
+            </ul>
+        </div>
+        <!-- right side div of third page -->
+        <div>
+
+        </div>
+    </div>
+</div>   
 </body>
 </html>
